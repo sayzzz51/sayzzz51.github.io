@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webemp — веб-студия</title>
+  <meta name="description" content="webemp — делаем сайты, которые приводят клиентов малому бизнесу. Интернет-магазины, сайты кофеен и автосервисов. От 20 000 ₽, от 25 дней.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <meta property="og:title" content="webemp — веб-студия">
+  <meta property="og:description" content="Делаем сайты, которые приводят клиентов малому бизнесу">
+  <meta property="og:image" content="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ШАПКА: горизонтальное лого с текстом -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="webemp — на главную">
+        <img src="logo-horizontal.png" alt="webemp" class="logo-h">
+        <img src="logo.png" alt="webemp" class="logo-v">
+      </a>
+      <nav class="nav__links">
+        <a href="#works">Работы</a>
+        <a href="#services">Услуги</a>
+        <a href="#process">Этапы</a>
+        <a href="#why">Цены</a>
+      </nav>
+      <a href="#contact" class="btn btn--blue btn--small">Обсудить сайт</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 01 HERO -->
+    <section class="hero section">
+      <div class="meta"><span><span class="meta__brand">WEBEMP</span> · ВЕБ-СТУДИЯ</span><span class="meta__num"><b>01</b> / 06</span></div>
+      <div class="hero__grid">
+        <div>
+          <h1 class="hero__title">Делаем сайты, которые <mark>приводят клиентов</mark> малому бизнесу</h1>
+          <div class="hero__line"></div>
+          <p class="hero__text">Интернет-магазины, сайты кофеен, автосервисов и салонов — от брифа до запущенного сайта с оплатой и заявками.</p>
+          <div class="hero__actions">
+            <a href="#works" class="btn btn--blue">Смотреть работы</a>
+            <a href="#contact" class="btn btn--ghost">Обсудить проект</a>
+          </div>
+        </div>
+        <div class="browser browser--hero" aria-hidden="true">
+          <div class="browser__bar"><i></i><i></i><i></i><span>ваш-сайт.ru</span></div>
+          <div class="browser__body">
+            <div class="mock-nav"><b></b><span></span><span></span><span></span></div>
+            <div class="mock-hero"><span></span><span></span><em></em></div>
+            <div class="mock-row"><span></span><span></span><span></span></div>
+            <div class="mock-foot"></div>
+          </div>
+          <span class="badge-ready">сайт готов ✓</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 РАБОТЫ -->
+    <section class="works section" id="works">
+      <div class="meta"><span class="meta__brand">ПОРТФОЛИО</span><span class="meta__num"><b>02</b> / 06</span></div>
+      <div class="section-head">
+        <h2>Наши работы</h2>
+        <div class="filters" role="tablist">
+          <button class="filter is-active" data-filter="all">Все</button>
+          <button class="filter" data-filter="shop">Интернет-магазин</button>
+          <button class="filter" data-filter="coffee">Кофейня</button>
+          <button class="filter" data-filter="auto">Автосервис</button>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- 03 УСЛУГИ -->
+    <section class="services section" id="services">
+      <div class="meta"><span class="meta__brand">УСЛУГИ</span><span class="meta__num"><b>03</b> / 06</span></div>
+      <h2>Что мы делаем</h2>
+      <div class="services__grid">
+        <article class="service">
+          <div class="ico ico--landing"><span></span><span></span></div>
+          <h3>Лендинг</h3>
+          <p>Одна страница под рекламу и заявки.</p>
+        </article>
+        <article class="service">
+          <div class="ico ico--card"><span></span><span></span></div>
+          <h3>Сайт-визитка</h3>
+          <p>Услуги, цены, контакты, карта.</p>
+        </article>
+        <article class="service">
+          <div class="ico ico--shop"><span></span><span></span><span></span><span></span></div>
+          <h3>Интернет-магазин</h3>
+          <p>Каталог, корзина, приём заказов.</p>
+        </article>
+        <article class="service">
+          <div class="ico ico--pay"><span></span><b>→</b><span></span></div>
+          <h3>Оплата и интеграции</h3>
+          <p>Онлайн-оплата, заказы прямо на кассу.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 04 ЭТАПЫ -->
+    <section class="process section" id="process">
+      <div class="meta"><span class="meta__brand">КАК МЫ РАБОТАЕМ</span><span class="meta__num"><b>04</b> / 06</span></div>
+      <h2>От идеи до запуска</h2>
+      <ol class="steps">
+        <li><span>01</span><h3>Бриф</h3><p>разбираем задачу и цели</p></li>
+        <li><span>02</span><h3>Дизайн</h3><p>макет под ваш бренд</p></li>
+        <li><span>03</span><h3>Разработка</h3><p>вёрстка, бэкенд, оплата</p></li>
+        <li><span>04</span><h3>Запуск</h3><p>домен, хостинг, поддержка</p></li>
+      </ol>
+    </section>
+
+    <!-- 05 ПОЧЕМУ МЫ -->
+    <section class="why section" id="why">
+      <div class="meta"><span class="meta__brand">ПОЧЕМУ МЫ</span><span class="meta__num"><b>05</b> / 06</span></div>
+      <h2>Быстро, понятно,<br>под ключ</h2>
+      <div class="facts">
+        <div class="fact"><strong>от 25 <small>дней</small></strong><p>от брифа до запущенного сайта</p></div>
+        <div class="fact"><strong>от 20 000 <small>₽</small></strong><p>фиксированная цена, без скрытых платежей</p></div>
+        <div class="fact"><strong>24/7</strong><p>сайт работает с телефона и компьютера, мы на связи после запуска</p></div>
+      </div>
+    </section>
+
+    <!-- 06 КОНТАКТЫ: квадратное лого без текста -->
+    <section class="contact" id="contact">
+      <div class="contact__inner section">
+        <div class="meta meta--light"><span class="meta__brand">ДАВАЙТЕ РАБОТАТЬ</span><span class="meta__num"><b>06</b> / 06</span></div>
+        <h2>Обсудим<br>ваш сайт?</h2>
+        <div class="contact__row">
+          <img src="logo.png" alt="webemp" class="contact__logo">
+          <a class="pill" href="tel:+79613272302">+7 (961) 327-23-02</a>
+          <a class="pill" href="https://t.me/webemp7" target="_blank" rel="noopener">Telegram: @webemp7</a>
+          <a class="pill" href="https://sayzzz51.github.io">sayzzz51.github.io</a>
+        </div>
+        <p class="contact__note">Первая консультация — бесплатно</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="logo-horizontal.png" alt="webemp" class="footer__logo">
+    <span>© <span id="year"></span> webemp · веб-студия</span>
+    <span>SAYZZZ51.GITHUB.IO</span>
+  </footer>
+
+  <!-- ПРОСМОТР СКРИНШОТОВ -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="browser__bar modal__bar"><i></i><i></i><i></i><span id="modal-title"></span>
+        <button class="modal__close" data-close aria-label="Закрыть">✕</button>
+      </div>
+      <div class="modal__viewer">
+        <img id="modal-img" alt="">
+        <button class="modal__arrow modal__arrow--prev" aria-label="Назад">‹</button>
+        <button class="modal__arrow modal__arrow--next" aria-label="Вперёд">›</button>
+        <span class="modal__count" id="modal-count"></span>
+      </div>
+      <div class="modal__thumbs" id="modal-thumbs"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
